@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacer Pedido | Posters by Quetzal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">POSTERS BY QUETZAL</div>
+            <ul class="nav-links">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="catalogo.html">CATÁLOGO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="pedido.html" class="active">HACER PEDIDO</a></li>
+                <li><a href="https://www.instagram.com/posters_by_quetzal/" target="_blank" class="ig-link">INSTAGRAM ↗</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="street-title">INICIA TU CUSTOM</h1>
+        <form id="order-form" class="order-form streetwear-box">
+            <div class="form-group">
+                <label for="name">NOMBRE COMPLETO:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">CORREO O WHATSAPP:</label>
+                <input type="text" id="contact" name="contact" required>
+            </div>
+            <div class="form-group">
+                <label for="product-type">TIPO DE PIEZA:</label>
+                <select id="product-type" name="product-type">
+                    <option value="poster">Póster Alto Gramaje</option>
+                    <option value="sticker">Stickers (Pliego Vinil)</option>
+                    <option value="apparel">Playera/Sudadera Oversize</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">CUÉNTANOS TU IDEA (TALLAS, REFERENCIAS):</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-100">ENVIAR SOLICITUD</button>
+        </form>
+        <div id="form-response"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 POSTERS BY QUETZAL</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
